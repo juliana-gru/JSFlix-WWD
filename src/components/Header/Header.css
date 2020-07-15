@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 35px 35px;
+  margin: auto;
+  justify-content: space-between;
+  max-width: 1440px;   
+}
+
+.logo {
+  height: 30px;
+}
+
+.btn-login {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 12px;
+  font-weight: bold;
+  color: #625928;
+  padding: 8px 20px;
+  background-color: #f6d515;
+  border: 1px solid #f6d515;
+  border-radius: 3px;
+}
+
+@media screen and (min-width:750px) {
+  header {    
+    padding: 40px 60px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .btn-login {    
+    padding: 12px 35px;    
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (min-width:) */
