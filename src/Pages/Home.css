@@ -28,18 +28,14 @@ div.homepage::before {
 
 .content h1 {
   color:white;
-  font-size: 38px;
+  font-size: 32px;
   margin: 0 35px;
 }
 
 .content p {
-  margin: 30px 35px;
-  font-size: 16px;
+  margin: 30px 30px;
+  font-size: 14px;
   color:#f4e8a1;
-}
-
-button:hover {
-  border: 1px solid white;  
 }
 
 .homepage-btn-cta {

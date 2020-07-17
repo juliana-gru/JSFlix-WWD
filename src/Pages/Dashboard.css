@@ -1,0 +1,7 @@
+.dashboard {
+  position: sticky;
+  height: 100%;
+  background-image: url(./resources/WuAssassins-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

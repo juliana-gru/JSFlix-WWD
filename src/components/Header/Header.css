@@ -1,18 +1,19 @@
 header {
   display: flex;
   align-items: center;
-  padding: 35px 35px;
+  /* padding: 35px */
+  padding: 10px 20px;
   margin: auto;
   justify-content: space-between;
   max-width: 1440px;   
 }
 
 .logo {
-  height: 30px;
+  height: 14px; 
+  /* height:30px */
 }
 
 .btn-login {
-  font-family: 'Montserrat', 'sans-serif';
   font-size: 12px;
   font-weight: bold;
   color: #625928;

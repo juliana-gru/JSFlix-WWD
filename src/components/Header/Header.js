@@ -2,11 +2,10 @@ import React from 'react'
 
 import './Header.css';
 import logo from './jsflix-logo.png';
-import { Children } from 'react';
 
 const Header = ({loginBtn, children}) => {  
   return (
-    <header className="index-header">
+    <header className="header">
       <div className="header-logo">
         <img src={logo} alt="JSFLIX LOGO" className="logo" />
       </div>

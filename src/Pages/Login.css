@@ -32,7 +32,7 @@ input[type=text], input[type=password] {
   font-size: 12px;
 }
 
-a {
+.loginPage a {
   text-decoration: none;
   color: #f4e8a1;
   font-weight: normal;
