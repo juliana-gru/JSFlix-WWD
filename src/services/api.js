@@ -17,8 +17,6 @@ const api = axios({
     }
     })
     .then(response => {
-      console.log(response);
-      console.log(response.data.ITEMS);
       if (response.data.ITEMS) {
         return response.data.ITEMS.map( item => ({
           id: item.netflixid,
