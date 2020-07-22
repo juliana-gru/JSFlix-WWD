@@ -7,7 +7,7 @@ const Header = ({loginBtn, children}) => {
   return (
     <header className="header">
       <div className="header-logo">
-        <img src={logo} alt="JSFLIX LOGO" className="logo" />
+        <a href="/"><img src={logo} alt="JSFLIX LOGO" className="logo" /></a>
       </div>
         {loginBtn && <a href="/login"> <button className="btn-login">LOGIN</button> </a>}
         {children}

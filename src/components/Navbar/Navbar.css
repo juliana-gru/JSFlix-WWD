@@ -34,7 +34,7 @@ div.user-menu {
   /* font-size: 15px; */
 }
 
-a, li {
+.nav-items a, li {
   text-decoration: none;
   display: inline;
   padding: 0 5px;  

@@ -11,7 +11,7 @@ const Navbar = () => {
         <i className="fas fa-caret-down"></i>
       </div>      
       <nav>
-        <ul>
+        <ul className="nav-items">
           <li> <a>Home</a> </li>
           <li> <a>TV Shows</a> </li>
           <li> <a>Movies</a> </li>

@@ -6,7 +6,7 @@ import './Home.css';
 
 const Login = () => {
 	return (
-		<div className='homepage loginPage'>
+		<div className='page loginPage'>
 			<Header loginBtn={false}>
 				<a href='/' class='back-home'>
 					<p class='back-home'> Back to Home </p>
@@ -14,7 +14,7 @@ const Login = () => {
 			</Header>
 			<section className='content'>
 				<form className="login-form" id="login-form">
-					<div class='container'>
+					
 						<label>Email</label>
 						<input type='text' name='username' required />
 
@@ -22,12 +22,12 @@ const Login = () => {
 						<input type='password' name='psw' required />
 
 						<a href='/dashboard'>
-							<button class='btn-login btn-log-page' id="btn-login-form" type='submit'>
+							<button className='btn-login btn-log-page' id="btn-login-form" type='submit'>
 								Login
 							</button>
 						</a>
-					</div>
-					<span class='psw'>
+					
+					<span className='psw'>
 						<a href='#'>Forgot password?</a>
 					</span>
 				</form>

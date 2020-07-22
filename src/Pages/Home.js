@@ -6,7 +6,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className="homepage">
+    <div className="page homepage">
       <Header loginBtn={true} />
       <section className="content" >
         <h1>See what's next</h1>

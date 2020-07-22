@@ -1,4 +1,4 @@
-div.homepage::before {
+div.page::before {
   background-image: url(./resources/hero-mask.png);
   content: "";
   display: block;
@@ -9,7 +9,7 @@ div.homepage::before {
   z-index: -1;
 }
 
-.homepage {
+.page {
   position: sticky;
   height: 100%;
   background-image: url(./resources/hero-bg.png);
@@ -23,7 +23,7 @@ div.homepage::before {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70%;
+  height: 80%;
 }
 
 .content h1 {
@@ -63,7 +63,7 @@ div.homepage::before {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   .content h1 {
     font-size: 90px;
   }

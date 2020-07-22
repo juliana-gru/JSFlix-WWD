@@ -6,7 +6,7 @@ import './CreateAccount.css'
 
 const CreateAccount = () => {
   return (
-    <div className="homepage cta">
+    <div className="page create-account-page">
       <Header loginBtn={true} />
       <section className="content">
         <form>
