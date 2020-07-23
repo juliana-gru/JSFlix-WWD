@@ -1,16 +1,16 @@
 .movies-section {
-  background-color: rgb(59, 44, 2);
+  background-color: rgb(20, 13, 0);
   font-size: 22px;
   color: white;
   /* padding: 0 60px; */
-  padding: 0 20px;
+  padding: 10px 20px;
   margin: auto;
   max-width: 1440px;
 }
 .movies-section h3 {
   /* padding: 30px 0 15px 0; */
-  padding-top: 10px;
-  font-size: 10px;
+  padding: 10px 0;
+  font-size: 12px;
 }
 
 .carousel-movie img {

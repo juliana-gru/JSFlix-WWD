@@ -1,27 +1,33 @@
-.navbar {
+.navbar-container {
   color:rgb(248, 243, 231);
   margin-left: 15px;
   width: 100%;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 
-.navbar nav {
-  display: none; 
+.navbar-container nav {
+  display: none;
+  margin-left: 15px; 
 }
 
 .mobile-nav {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-nav i, .mobile-nav a {
   font-size: 8px;
+  margin-left: 3px;
 }
 
-
-div.user-menu {
-  display: inline-flex;
-  /* align-items: center;   */
+.user-menu {
+  display: flex;
+  align-items: center;
 }
 
-.user-icon img {
+.user-icon {
   margin: 0 15px;
   border-radius: 50%;
   height: 20px
@@ -42,21 +48,44 @@ div.user-menu {
 
 
 /* Not responsive  */
-@media screen and (min-width: 767px) {
-  .navbar {    
-    justify-content: space-between;
-  }
+@media screen and (min-width: 750px) { 
   
-  nav {
-    display: block;
+  .mobile-nav i, .mobile-nav a {
+    font-size: 14px;
+    margin-left: 10px;
   }
 
   .fa-bell, .fa-caret-down {
-    font-size: 25px;
+    font-size: 22px;
   }
 
-  .user-icon img {    
-    margin: 0 20px;
-    height: 50px;
+  .user-icon {    
+    margin: 0 22px;
+    height: 42px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar-container nav {
+    display: block; 
+  }
+  .mobile-nav {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar-container nav {
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  
+  .fa-bell, .fa-caret-down {
+    font-size: 30px;
+  }
+
+  .user-icon {    
+    margin: 0 35px;
+    height: 60px;
   }
 }

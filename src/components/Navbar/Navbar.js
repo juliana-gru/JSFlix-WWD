@@ -5,7 +5,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return(
-    <div className="navbar">
+    <div className="navbar-container">
       <div className="mobile-nav">
         <a>Browse</a>
         <i className="fas fa-caret-down"></i>
@@ -20,15 +20,9 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="user-menu">
-        <span className="notification-bell">
-          <i className="fas fa-bell"></i>
-        </span>
-        <span className="user-icon">
-          <img src={userImage}></img>
-        </span>
-        <span className="menu-icon">
-          <i className="fas fa-caret-down"></i>
-        </span>
+        <i className="fas fa-bell notification-bell"></i>        
+        <img src={userImage} className="user-icon"></img>        
+        <i className="fas fa-caret-down"></i>        
       </div>
     </div>
   )

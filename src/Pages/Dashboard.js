@@ -23,7 +23,9 @@ const Dashboard = () => {
         <Navbar />
       </Header>
       <MainMovie />
-      <Carousel heading="Popular on JSflix" movieList={movieList} />      
+      {/* <Carousel heading="Popular on JSflix" movieList={movieList} /> */}
+      {/* <Carousel heading="TV Shows" movieList={movieList} /> */}
+      {/* <Carousel heading="Blockbuster movies" movieList={movieList} />       */}
     </div>
   )
 }
