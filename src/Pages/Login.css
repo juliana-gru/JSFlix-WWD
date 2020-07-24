@@ -4,9 +4,7 @@
   text-decoration: none;
 }
 
-#login-form {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+.login-form {  
   font-weight: 600;
   color: #aa9b4e;
   background-color: rgba(0,0,0,0.75);
@@ -16,7 +14,12 @@
   width: 230px;
 }
 
-input[type=text], input[type=password] {
+.login-form, .login-form input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.login-form input {
   padding: 0.6em 0.9em;
   width: 100%;
   margin: 10px 0 24px 0;
@@ -26,7 +29,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-#btn-login-form {
+.form-btn-login {
   padding: 8px 16px;
   width: 100%;
   margin: 8px 0 18px 0;
@@ -40,44 +43,42 @@ input[type=text], input[type=password] {
 }
 
 @media screen and (min-width: 750px) {
-  .back-home, #login-form, #login-form input, #btn-login-form {
+  .back-home, .login-form, .login-form input, .form-btn-login {
     font-size: 16px;
   }
 
-  #login-form {
+  .login-form {
     padding: 60px;
     height: 310px;
     width: 280px;
   }
 
-  #login-form input {
+  .login-form input {
     padding: 12px 20px;
     margin-bottom: 30px;
   }
   
-  #btn-login-form {
+  .form-btn-login {
     padding: 12px 20px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .back-home, #login-form, #login-form input, #btn-login-form {
-    font-size: 18px;
-  }
+  .back-home {font-size: 18px;}
 
-  #login-form {    
+  /* .login-form {    
     padding: 80px;
     height: 370px;
     width: 340px;
   }
 
-  #login-form input {
+  .login-form input {
     padding: 16px 26px;    
     margin-bottom: 32px;
   }
 
-  #btn-login-form {
+  .form-btn-login {
     padding: 16px 26px;
     margin-bottom: 26px;
-  }
+  } */
 }

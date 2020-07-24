@@ -1,7 +1,19 @@
 .dashboard {
-  position: sticky;
   height: 100%;
-  background-image: url(./resources/WuAssassins-bg.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+.wrapper-hero-section {
+  background-image: url(./resources/WuAssassins-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* @media screen and (min-width: 1200px) {
+  .dashboard {    
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+} */

@@ -1,25 +1,27 @@
-.movies-section {
+/* From Desktop to mobile because of the slick-carousel */
+.carousel-container p {
+  font-size: 0.5em;
+  color:rgb(218, 208, 186);
+  margin-top: 10px;
+}
+.movies-section, .tv-shows-section {
   background-color: rgb(20, 13, 0);
   font-size: 22px;
   color: white;
-  /* padding: 0 60px; */
   padding: 10px 20px;
   margin: auto;
-  max-width: 1440px;
+  min-height: 100px;
+  /* max-width: 1440px; */
 }
-.movies-section h3 {
-  /* padding: 30px 0 15px 0; */
+
+.movies-section h3, .tv-shows-section h3 {
   padding: 10px 0;
   font-size: 12px;
+  color: rgb(248, 243, 231);
 }
 
-.carousel-movie img {
-  height: 125px;
-}
-
-.slick-list {
-  overflow: visible !important;
-}
+.carousel-item a img {height: 140px;}
+.slick-list {overflow: visible !important;}
 
 .slick-next {
   right: -20px !important;
@@ -30,3 +32,28 @@
   left: -20px !important;
   z-index: 1;
 }
+
+/* @media screen and (min-width: 600px) {
+  .carousel-item a img {height: 160px}
+  .movies-section h3, .tv-shows-section h3 {font-size: 12px} */
+/* } */
+@media screen and (min-width: 750px) {
+  .carousel-item a img {height: 200px}
+  .movies-section h3, .tv-shows-section h3 {font-size: 16px}
+  .slick-next::before, .slick-prev::before {font-size: 25px}
+}
+@media screen and (min-width: 1000px) {
+  .carousel-item a img {height: 280px}
+  .slick-next::before, .slick-prev::before {font-size: 30px}
+}
+@media screen and (min-width: 1500px) {
+  .carousel-movie a img {height: 350px}
+  .movies-section h3, .tv-shows-section h3 {font-size: 18px }
+}
+
+/* @media screen and (min-width: 1500px) {
+  .carousel-movie img {height: 200px;}
+}
+@media screen and (min-width: 1500px) {
+  .carousel-movie img {height: 200px;}
+} */
