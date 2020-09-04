@@ -1,0 +1,19 @@
+.browse {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.wrapper-hero-section {
+  background-image: url(./resources/WuAssassins-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* @media screen and (min-width: 1200px) {
+  .browse {    
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+} */
