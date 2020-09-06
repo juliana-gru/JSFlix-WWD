@@ -1,1 +1,1 @@
-Web app that emulates Netflix
+Web app that emulates Netflix - under development
