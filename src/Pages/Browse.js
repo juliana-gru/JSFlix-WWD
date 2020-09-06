@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 
 import Header from '../components/Header/Header'
 import Navbar from '../components/Navbar/Navbar'
-import MainMovie from '../components/MainMovie/MainMovie'
+import CoverMovie from '../components/MainMovie/CoverMovie'
 import Carousel from '../components/Carousel/Carousel'
 import MyList from '../components/MyListCarousel/MyListCarousel'
-import theMovieDB from '../backend/theMovieDB';
+import theMovieDB from '../util/theMovieDB';
 
 import './Browse.css'
 
@@ -30,11 +30,14 @@ const Browse = () => {
         <Header loginBtn={false}>
           <Navbar />
         </Header>
-        <MainMovie />
+        <CoverMovie />
+      </div>
+      <div className="carousels-container">
+        <Carousel type="movies" heading="Popular on JSflix" itemsList={movieList} />
+        <Carousel type="tv-shows" heading="TV Shows" itemsList={tvShowList} />
+        {/* <MyList heading="My List" itemsList={myList} />       */}
       </div>      
-      <Carousel type="movies" heading="Popular on JSflix" itemsList={movieList} />
-      <Carousel type="tv-shows" heading="TV Shows" itemsList={tvShowList} />
-      <MyList heading="My List" itemsList={myList} />      
+      
     </div>
   )
 }

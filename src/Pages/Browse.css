@@ -11,6 +11,11 @@
   background-position: center center;
 }
 
+.carousels-container {
+  width: 100%;
+  background-color: rgb(20, 13, 0);
+}
+
 /* @media screen and (min-width: 1200px) {
   .browse {    
     background-size: cover;

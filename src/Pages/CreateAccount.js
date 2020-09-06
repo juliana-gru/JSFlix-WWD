@@ -27,7 +27,7 @@ const CreateAccount = () => {
     //api.post(username, password)
 
     //Direct to dashboard
-    history.push('/dashboard');
+    history.push('/browse');
   }
   
   return (

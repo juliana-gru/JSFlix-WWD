@@ -11,7 +11,7 @@ const Home = () => {
       <section className="content" >
         <h1>See what's next</h1>
         <p> Watch anywhere. Cancel at anytime.</p>
-        <a href="/create-account"> <button className="homepage-btn-cta"> Try for 30 days free </button> </a>
+        <a href="/browse"> <button className="homepage-btn-cta"> Try for 30 days free </button> </a>
       </section>      
     </div>
   )

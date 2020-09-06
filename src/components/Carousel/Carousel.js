@@ -41,7 +41,7 @@ const Carousel = ({ heading, itemsList, type, ...props }) => {
 	}
 
 	return (
-		<section className={`${type}-section`}>
+		<section className={`${type}-section carousel-section`}>
 			<h3>{heading}</h3>
 			<div className="carousel-container">
 				<Slider  {...settings}>

@@ -3,11 +3,11 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import './Login.css';
 import './Home.css';
-import theMovieDB from '../backend/theMovieDB';
-//import { useHistory } from 'react-router-dom';
+import theMovieDB from '../util/theMovieDB';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
-	//const history = useHistory();	
+	const history = useHistory();	
 	
 	const handleSubmission = e => {
 		e.preventDefault();
@@ -16,8 +16,8 @@ const Login = () => {
 
 		//Verify if info is correct
 
-		//Direct to dashboard
-		//history.push('/dashboard');
+		//Direct to browse
+		history.push('/browse');
 		theMovieDB.requestToken();		
 	}
 
