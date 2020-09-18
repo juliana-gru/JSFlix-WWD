@@ -33,9 +33,11 @@ const Browse = () => {
         <CoverMovie />
       </div>
       <div className="carousels-container">
-        <Carousel type="movies" heading="Popular on JSflix" itemsList={movieList} />
-        <Carousel type="tv-shows" heading="TV Shows" itemsList={tvShowList} />
-        {/* <MyList heading="My List" itemsList={myList} />       */}
+        <div className="gradient">
+          <Carousel type="movies" heading="Popular on JSflix" itemsList={movieList} />
+          <Carousel type="tv-shows" heading="TV Shows" itemsList={tvShowList} />
+          {/* <MyList heading="My List" itemsList={myList} />       */}
+        </div>        
       </div>      
       
     </div>

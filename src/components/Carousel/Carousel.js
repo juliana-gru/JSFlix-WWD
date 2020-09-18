@@ -42,19 +42,19 @@ const Carousel = ({ heading, itemsList, type, ...props }) => {
 
 	return (
 		<section className={`${type}-section carousel-section`}>
-			<h3>{heading}</h3>
-			<div className="carousel-container">
-				<Slider  {...settings}>
-					{itemsList.map((item) => (
-						<div key={item.id} className="carousel-item">
-							<a id='movie-link'>
-								<img src={item.img} alt={item.title}></img>
-							</a>
-						</div>
-					))}
-				</Slider>
-			</div>						
-		</section>
+				<h3>{heading}</h3>
+				<div className="carousel-container">
+					<Slider  {...settings}>
+						{itemsList.map((item) => (
+							<div key={item.id} className="carousel-item">
+								<a id='movie-link'>
+									<img src={item.img} alt={item.title}></img>
+								</a>
+							</div>
+						))}
+					</Slider>
+				</div>						
+		</section>				
 	);
 };
 
