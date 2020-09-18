@@ -6,7 +6,7 @@ import movieLogo from './movie-logo.png'
 const CoverMovie = () => {
   return (
     <section className="hero-section">
-      <img src={movieLogo} className="movie-logo"></img>
+      <img src={movieLogo} className="movie-logo" alt="movie logo"></img>
       <div className="movie-description">
         <button className="btn-hero">
           <span>

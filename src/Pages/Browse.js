@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import Header from '../components/Header/Header'
 import Navbar from '../components/Navbar/Navbar'
-import CoverMovie from '../components/MainMovie/CoverMovie'
+import CoverMovie from '../components/CoverMovie/CoverMovie'
 import Carousel from '../components/Carousel/Carousel'
 import MyList from '../components/MyListCarousel/MyListCarousel'
 import theMovieDB from '../util/theMovieDB';

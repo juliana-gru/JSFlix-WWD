@@ -15,8 +15,8 @@
   font-weight: 500;
   background-color: #707070b0;
   margin: 15px 10px 15px 0;  
-  width: 62px;
-  padding: 6px 0;  
+  width: 8.1em;
+  height: 2.8em;  
   border-style: none;
   border-radius: 2px;  
 }
@@ -28,28 +28,22 @@
 }
 
 .fa-plus, .fa-play {
-  font-size: 8px;
-  margin-right: 8px;
+  font-size: 6px;
+  margin-right: 1em;
 }
 
-.movie-description h3 {
-  display: none;
-}
-
-.movie-description p {
-  display: none;
-}
+.movie-description h3, .movie-description p {display: none;}
 
 @media screen and (min-width: 750px) {
   .hero-section {padding: 40px 0 60px 60px;}
-
   .movie-logo {height: 80px;}
+
+  .fa-plus, .fa-play {font-size: 12px;}
 
   .btn-hero {
     font-size: 14px;
     margin: 30px 25px 30px 0;
-    width: 100px;
-    padding: 8px;
+    width: 8.3em;
   } 
 
   .movie-description h3 {
@@ -68,15 +62,12 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .hero-section {padding: 60px 0 80px 60px}
-  
+  .hero-section {padding: 60px 0 80px 60px}  
   .movie-logo {height: 110px;}
 
   .btn-hero {
     font-size: 16px;
     margin: 40px 40px 40px 0;
-    width: 130px;
-    padding: 12px;
   }
   
   .movie-description p {
@@ -88,18 +79,14 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-section {
-    padding: 100px 0;
-  }
-
+  .hero-section {padding: 100px 0;}
   .movie-logo {height: 150px;}
+  .fa-play, .fa-plus {font-size: 16px;}
 
   .btn-hero {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     margin: 50px 45px 70px 0;
-    width: 180px;
-    padding: 16px;
   }  
 
   .movie-description h3 {font-size: 26px;}
