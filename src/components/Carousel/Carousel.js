@@ -6,58 +6,55 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.css';
 
 const Carousel = ({ heading, itemsList, type, ...props }) => {
-
-	const settings = {
+  const settings = {
     speed: 500,
-		slidesToScroll: 1,
-		slidesToShow: 8,
-		infinite: false,
-		responsive: [
-			{
-				breakpoint: 1600,
-				settings: {
-					slidesToShow: 7,
-				}
-			},
-			{
-				breakpoint: 1400,
-				settings: {
-					slidesToShow: 6,
-				}
-			},
-			{
-				breakpoint: 1100,
-				settings: {
-					slidesToShow: 5,
-				}
-			},
-			{
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 3,
-				}
-			}
-		]
-	}
+    slidesToScroll: 1,
+    slidesToShow: 8,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 7,
+        },
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
+  };
 
-	return (
-		<section className={`${type}-section carousel-section`}>
-				<h3>{heading}</h3>
-				<div className="carousel-container">
-					<Slider  {...settings}>
-						{itemsList.map((item) => (
-							<div key={item.id} className="carousel-item">
-								<a id='movie-link'>
-									<img src={item.img} alt={item.title}></img>
-								</a>
-							</div>
-						))}
-					</Slider>
-				</div>						
-		</section>				
-	);
+  return (
+    <section className={`${type}-section carousel-section`}>
+      <h3>{heading}</h3>
+      <div className="carousel-container">
+        <Slider {...settings}>
+          {itemsList.map((item) => (
+            <div key={item.id} className="carousel-item">
+              <a id="movie-link">
+                <img src={item.img} alt={item.title} />
+              </a>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
+  );
 };
 
 export default Carousel;
-
-
