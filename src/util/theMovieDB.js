@@ -1,7 +1,7 @@
 const apiKey = '011ebfcb6f751ca4ff79f0a61fcb6df1'; //v3 auth
 const bearerKey = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTFlYmZjYjZmNzUxY2E0ZmY3OWYwYTYxZmNiNmRmMSIsInN1YiI6IjVmMTkxZDFlZGI5NTJkMDAzNzkxZDQ0YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.M1TXVhJ9SydXt8uCsH_EXV_Ru3NPdewERC_llO7jV-s'
 
-const redirectURI = 'http://localhost:3000/dashboard';
+const redirectURI = 'http://localhost:3000/browse';
 
 const headers = {
   authorization: `Bearer ${bearerKey}`,
@@ -64,7 +64,21 @@ const theMovieDB = {
         }))
       }
     });    
-  },  
+  },
+  
+  getNowPlaying() {
+    return fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`)
+    .then(response => response.json())
+    .then(jsonResponse => {
+      if (jsonResponse.results) {
+        return jsonResponse.results.map(movie => ({
+          id: movie.id,
+          title: movie.title,
+          img: `https://image.tmdb.org/t/p/w600_and_h900_bestv2${movie.poster_path}`
+        }))
+      }
+    })
+  }
 }
   
 export default theMovieDB;

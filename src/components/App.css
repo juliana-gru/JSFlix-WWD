@@ -18,7 +18,3 @@ button {
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
 }
-
-button:hover {
-  border: 1px solid white;  
-}

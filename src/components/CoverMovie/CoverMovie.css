@@ -5,9 +5,7 @@
   color: white;
 }
 
-.movie-logo {
-  height: 40px;
-}
+.movie-logo {height: 40px;}
 
 .btn-hero {
   color: white;
@@ -26,6 +24,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.btn-hero:hover {border: 1px solid white;}
 
 .fa-plus, .fa-play {
   font-size: 6px;

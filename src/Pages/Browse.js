@@ -4,25 +4,24 @@ import Header from '../components/Header/Header'
 import Navbar from '../components/Navbar/Navbar'
 import CoverMovie from '../components/CoverMovie/CoverMovie'
 import Carousel from '../components/Carousel/Carousel'
-import MyList from '../components/MyListCarousel/MyListCarousel'
 import theMovieDB from '../util/theMovieDB';
 
 import './Browse.css'
 
 const Browse = () => {
-  const [movieList, setMovieList] = useState(dev);
-  const [tvShowList, setTVShowsList] = useState(dev);
-  const [myList, setMyList] = useState();
+  const [movieList, setMovieList] = useState([]);
+  const [tvShowList, setTVShowsList] = useState([]);
 
-  // useEffect(() => {
-  //   theMovieDB.getAccessToken();
-  //   theMovieDB.getMovies().then(response => {
-  //     setMovieList(response)
-  //   });
-  //   theMovieDB.getTVShows().then(response => {
-  //     setTVShowsList(response)
-  //   });
-  // })
+  useEffect(() => {
+    theMovieDB.getAccessToken();
+    theMovieDB.getMovies().then(response => {
+      setMovieList(response)
+    });
+    theMovieDB.getTVShows().then(response => {
+      setTVShowsList(response)
+    });
+    console.log('mounted');    
+  }, []);
 
   return (
     <div className="Browse">
@@ -33,13 +32,10 @@ const Browse = () => {
         <CoverMovie />
       </div>
       <div className="carousels-container">
-        <div className="gradient">
-          <Carousel type="movies" heading="Popular on JSflix" itemsList={movieList} />
-          <Carousel type="tv-shows" heading="TV Shows" itemsList={tvShowList} />
-          {/* <MyList heading="My List" itemsList={myList} />       */}
-        </div>        
-      </div>      
-      
+        <div className="gradient"></div>
+        <Carousel type="movies" heading="Popular on JSflix" itemsList={movieList} />
+        <Carousel type="tv-shows" heading="TV Shows" itemsList={tvShowList} />    
+      </div>     
     </div>
   )
 }
