@@ -9,7 +9,7 @@
 
 .navbar-container nav {
   display: none;
-  margin-left: 15px; 
+  margin-left: 15px;
 }
 
 .mobile-nav {
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.mobile-nav i, .mobile-nav a {
+.mobile-nav i {
   font-size: 8px;
   margin-left: 3px;
 }
@@ -40,17 +40,16 @@
   /* font-size: 15px; */
 }
 
-.nav-items a, li {
+.nav-items li {
   text-decoration: none;
   display: inline;
-  padding: 0 5px;  
+  padding: 0 10px;
 }
 
 
-/* Not responsive  */
-@media screen and (min-width: 750px) { 
-  
-  .mobile-nav i, .mobile-nav a {
+@media screen and (min-width: 750px) {
+
+  .mobile-nav i {
     font-size: 14px;
     margin-left: 10px;
   }
@@ -59,7 +58,7 @@
     font-size: 22px;
   }
 
-  .user-icon {    
+  .user-icon {
     margin: 0 22px;
     height: 42px;
   }
@@ -67,7 +66,7 @@
 
 @media screen and (min-width: 1000px) {
   .navbar-container nav {
-    display: block; 
+    display: block;
   }
   .mobile-nav {
     display: none !important;
@@ -79,12 +78,12 @@
     font-size: 20px;
     margin-left: 25px;
   }
-  
+
   .fa-bell, .fa-caret-down {
     font-size: 30px;
   }
 
-  .user-icon {    
+  .user-icon {
     margin: 0 35px;
     height: 60px;
   }

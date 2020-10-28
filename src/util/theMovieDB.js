@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const apiKey = '011ebfcb6f751ca4ff79f0a61fcb6df1'; // v3 auth
 const bearerKey = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTFlYmZjYjZmNzUxY2E0ZmY3OWYwYTYxZmNiNmRmMSIsInN1YiI6IjVmMTkxZDFlZGI5NTJkMDAzNzkxZDQ0YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.M1TXVhJ9SydXt8uCsH_EXV_Ru3NPdewERC_llO7jV-s';
 
@@ -9,7 +10,7 @@ const headers = {
 };
 
 let requestToken;
-let accessToken;
+// let accessToken;
 
 const theMovieDB = {
   requestToken() {
@@ -27,7 +28,7 @@ const theMovieDB = {
       });
   },
 
-  getAccessToken() {
+  /* getAccessToken() {
     requestToken = localStorage.getItem('requestToken');
 
     fetch('https://api.themoviedb.org/4/auth/access_token', {
@@ -36,8 +37,10 @@ const theMovieDB = {
       body: JSON.stringify({ request_token: requestToken }),
     })
       .then((response) => response.json())
-      .then((jsonResponse) => (accessToken = jsonResponse.access_token));
-  },
+      .then((jsonResponse) => {
+        accessToken = jsonResponse.access_token;
+      });
+  }, */
 
   getMovies() {
     return fetch(

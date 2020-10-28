@@ -20,7 +20,7 @@
   max-width: 1440px;
 }
 
-.carousel-item a img {height: 140px;}
+.carousel-item img {height: 140px;}
 
 .slick-next {
   right: -20px;
@@ -33,19 +33,19 @@
 }
 
 @media screen and (min-width: 750px) {
-  .carousel-item a img {height: 200px}
+  .carousel-item img {height: 200px}
   .carousel-section h3 {font-size: 16px}
   .slick-next::before, .slick-prev::before {font-size: 25px}
 }
 
 @media screen and (min-width: 1000px) {
-  .carousel-item a img {height: 280px}
+  .carousel-item img {height: 280px}
   .slick-next::before, .slick-prev::before {font-size: 30px}
   .slick-next {right: -30px}
   .slick-prev {left: -30px}
 }
 
 @media screen and (min-width: 1500px) {
-  .carousel-movie a img {height: 350px}
+  .carousel-movie img {height: 350px}
   .carousel-section h3 {font-size: 22px}
 }

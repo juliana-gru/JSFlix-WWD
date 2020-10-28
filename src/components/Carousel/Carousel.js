@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Slider from 'react-slick';
 
@@ -5,7 +7,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carousel.css';
 
-const Carousel = ({ heading, itemsList, type, ...props }) => {
+const Carousel = ({
+  heading, itemsList, type,
+}) => {
   const settings = {
     speed: 500,
     slidesToScroll: 1,
@@ -46,9 +50,7 @@ const Carousel = ({ heading, itemsList, type, ...props }) => {
         <Slider {...settings}>
           {itemsList.map((item) => (
             <div key={item.id} className="carousel-item">
-              <a id="movie-link">
-                <img src={item.img} alt={item.title} />
-              </a>
+              <img src={item.img} alt={item.title} />
             </div>
           ))}
         </Slider>

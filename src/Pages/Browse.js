@@ -14,7 +14,7 @@ const Browse = () => {
   const [nowPlaying, setNowPlaying] = useState([]);
 
   useEffect(() => {
-    theMovieDB.getAccessToken();
+    // theMovieDB.getAccessToken();
 
     theMovieDB.getMovies().then((response) => {
       setMovieList(response);
@@ -27,7 +27,6 @@ const Browse = () => {
     theMovieDB.getNowPlaying().then((response) => {
       setNowPlaying(response);
     });
-    console.log('mounted');
   }, []);
 
   return (

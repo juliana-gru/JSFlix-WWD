@@ -6,36 +6,31 @@ import './Navbar.css';
 const Navbar = () => (
   <div className="navbar-container">
     <div className="mobile-nav">
-      <a>Browse</a>
+      <i>Browse</i>
       <i className="fas fa-caret-down" />
     </div>
     <nav>
       <ul className="nav-items">
         <li>
-          {' '}
-          <a>Home</a>{' '}
+          Home
         </li>
         <li>
-          {' '}
-          <a>TV Shows</a>{' '}
+          TV Shows
         </li>
         <li>
-          {' '}
-          <a>Movies</a>{' '}
+          Movies
         </li>
         <li>
-          {' '}
-          <a>Latest</a>{' '}
+          Latest
         </li>
         <li>
-          {' '}
-          <a>My list</a>{' '}
+          My list
         </li>
       </ul>
     </nav>
     <div className="user-menu">
       <i className="fas fa-bell notification-bell" />
-      <img src={userImage} className="user-icon" />
+      <img src={userImage} className="user-icon" alt="user" />
       <i className="fas fa-caret-down" />
     </div>
   </div>
