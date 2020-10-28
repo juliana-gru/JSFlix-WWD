@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 import './CoverMovie.css';
@@ -7,13 +8,13 @@ const CoverMovie = () => (
   <section className="hero-section">
     <img src={movieLogo} className="movie-logo" alt="movie logo" />
     <div className="movie-description">
-      <button className="btn-hero">
+      <button className="btn-hero" type="button">
         <span>
           <i className="fas fa-play" />
           Play
         </span>
       </button>
-      <button className="btn-hero">
+      <button className="btn-hero" type="button">
         <span>
           <i className="fas fa-plus" />
           My List
