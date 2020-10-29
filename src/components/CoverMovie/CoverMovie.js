@@ -2,7 +2,7 @@
 import React from 'react';
 
 import './CoverMovie.css';
-import movieLogo from './movie-logo.png';
+import movieLogo from './movie-logo-min.png';
 
 const CoverMovie = () => (
   <section className="hero-section">

@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 import './Header.css';
-import logo from './jsflix-logo.png';
+import logo from './jsflix-logo-min.png';
 
 const Header = ({ loginBtn, children }) => (
   <header className="header">
@@ -12,8 +13,7 @@ const Header = ({ loginBtn, children }) => (
     </div>
     {loginBtn && (
       <a href="/login">
-        {' '}
-        <button className="btn-login">LOGIN</button>{' '}
+        <button type="button" className="btn-login">LOGIN</button>
       </a>
     )}
     {children}

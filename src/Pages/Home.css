@@ -1,5 +1,5 @@
 div.page::before {
-  background-image: url(./resources/hero-mask.png);
+  background-image: url(./resources/hero-mask-min.png);
   content: "";
   display: block;
   position: absolute;
@@ -12,7 +12,7 @@ div.page::before {
 .page {
   position: sticky;
   height: 100%;
-  background-image: url(./resources/hero-bg.png);
+  background-image: url(./resources/hero-bg-min.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -73,7 +73,7 @@ div.page::before {
     margin: 60px 0 50px;
   }
 
-  .homepage-btn-cta {    
+  .homepage-btn-cta {
     padding: 22px 38px;
     font-size: 22px;
   }
